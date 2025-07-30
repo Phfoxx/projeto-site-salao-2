@@ -1,18 +1,21 @@
 .container {
   padding-left: 5rem;
-  height: 80%;
+  height: auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: 40% 70%;
-  grid-template-rows: 20vh 70vh;
+  grid-template-rows: 45% 70%;
   grid-template-areas:
     "main-text main-image-container"
     "services-pictures main-image-container"
 }
 
-.main-text{
-  margin-top: 2vh;
+.item.main-text{
+  width: 100%;
+  height: auto;
+  margin-top: 4vh;
   grid-area: main-text;
+  overflow: hidden;
 }
 
 .services-pictures{
@@ -20,7 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
+  width: 100%;
+  height: auto;
 }
 
 .main-image-container {
@@ -36,7 +40,7 @@
 h2 {
   font-family: var(--font-family);
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--secondary-color);
 }
 
@@ -48,8 +52,8 @@ p {
 }
 
 .main-image{
-  width: 80vh;
-  height: 100vh;
+  width: 70%;
+  height: 80%;
   transition: transform 0.3s ease;
 }
 
@@ -64,23 +68,16 @@ p {
   align-items: center;
 }
 
-
-.service-image{
-  align-items: center;
-  width: 40vh;
-  height: 20vh;
-}
-
 /* Container principal */
 .main-container {
-    width: 25%;
+    width: 100%;
     position: relative;
 }
 
 /* Estilo para a imagem */
 .image {
-    display: block;
-    width: 40vh;
+    align-items: center;
+    width: 100%;
     height: auto;
 }
 
@@ -92,7 +89,7 @@ p {
     right: 0;
     background-color: rgba(255, 255, 255, 0.7);
     height: 0;
-    width: 40vh;
+    width: 100%;
     overflow: hidden;
     transition: height 0.5s ease;
 }
@@ -104,8 +101,57 @@ p {
 
 /* Estilo para o texto dentro da sobreposição */
 .text {
-    padding: 20px;
-    color: #fff;
-    font-size: 20px;
+    padding: 0.5rem;  
+}
+
+.text h2{
+  font-size: 2vh;
+}
+
+.text p{
+    color: var(--primary-color);
+    font-size: 2vh;
     line-height: 1.4;
+}
+
+.footer_social_media{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-neutral-40);
+    
+}
+
+.footer-link{
+  display: flex;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.footer-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0.3rem;
+    font-size: 1.25rem;    
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
 }
