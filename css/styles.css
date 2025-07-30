@@ -60,6 +60,9 @@ nav ul {
     font-weight: 700;
     font-size: 1.25rem;
 }
+.nav-links a:hover{
+    opacity: 0.8;
+}
 
 nav button {
     background-color: var(--secondary-color);
