@@ -88,3 +88,45 @@ nav button:hover {
 .card-body { 
     height: 100%;
 }
+
+.footer_social_media{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-neutral-40);
+    
+}
+
+.footer-link{
+  display: flex;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.footer-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0.3rem;
+    font-size: 1.25rem;    
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
