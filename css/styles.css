@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #0D0D0D;
+    --secondary-color: #9F8F82;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: #9F8F82;
+    background: linear-gradient(90deg, rgba(159, 143, 130, 1) 0%, rgba(157, 126, 105, 1) 50%, rgba(161, 143, 131, 1) 100%);
+}
+
+.card-main {
+    background-color: #F2F2F2;
+    width: 200vh;
+    height: 100vh;
+    margin: 3rem 2rem;
+    border-radius: 50px;
+    box-shadow: #f2f2f2 0px 0px 0px 5px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1.8rem 0rem;
+    color: var(--secondary-color);
+    border-bottom: solid 1px var(--secondary-color);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.logo {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+nav button {
+    background-color: var(--secondary-color);
+    color: #F2F2F2;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+nav button a {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+nav button:hover {
+    opacity: 0.8;
+}
+
+.card-body { 
+    height: 100%;
+}
