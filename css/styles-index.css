@@ -71,3 +71,41 @@ p {
   height: 20vh;
 }
 
+/* Container principal */
+.main-container {
+    width: 25%;
+    position: relative;
+}
+
+/* Estilo para a imagem */
+.image {
+    display: block;
+    width: 40vh;
+    height: auto;
+}
+
+/* Container da sobreposição */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 0;
+    width: 40vh;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+/* Ao passar o mouse, a altura da sobreposição vai para 100% */
+.main-container:hover .overlay {
+    height: 100%;
+}
+
+/* Estilo para o texto dentro da sobreposição */
+.text {
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.4;
+}
